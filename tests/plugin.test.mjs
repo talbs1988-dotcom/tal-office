@@ -168,3 +168,10 @@ test("העובד מקבל כרטיס ב-team-ai", () => {
   const agent = readFileSync(join(SKILLS, "office-agent", "SKILL.md"), "utf8");
   assert.ok(agent.includes("team-ai/<שם>.md"));
 });
+
+test("הפוקוס עכשיו: בתבנית, ונמלא בשלב המפה", () => {
+  const t = readFileSync(join(TEMPLATES, "CLAUDE.md"), "utf8");
+  assert.ok(t.includes("## הפוקוס עכשיו"));
+  const map = readFileSync(join(SKILLS, "office-map", "SKILL.md"), "utf8");
+  assert.ok(map.includes("\"הפוקוס עכשיו\""));
+});

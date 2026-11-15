@@ -175,3 +175,12 @@ test("הפוקוס עכשיו: בתבנית, ונמלא בשלב המפה", () =
   const map = readFileSync(join(SKILLS, "office-map", "SKILL.md"), "utf8");
   assert.ok(map.includes("\"הפוקוס עכשיו\""));
 });
+
+test("תעודת הזהות בשני שלבים: המסמך המלא נשמר בזיכרון, והכרטיס נבנה ממנו", () => {
+  const biz = readFileSync(join(ROOT, "plugins/tal-office/skills/office-business/SKILL.md"), "utf8");
+  assert.match(biz, /memory\/about-business\.md/);
+  assert.match(biz, /מילה במילה, בלי לקצר/);
+  assert.match(biz, /מתחת ל-200 שורות/);
+  const map = readFileSync(join(ROOT, "plugins/tal-office/skills/office-map/SKILL.md"), "utf8");
+  assert.match(map, /memory\/about-business\.md/);
+});

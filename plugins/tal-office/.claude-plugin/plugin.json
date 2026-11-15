@@ -1,0 +1,8 @@
+{
+  "name": "tal-office",
+  "description": "המשרד: מקים לבעל העסק תיקייה מסודרת עם Claude Code. קלוד מכיר את העסק, זוכר, שומר כל דבר במקום שלו, ובונים סקיל וסוכן ראשונים",
+  "version": "0.1.0",
+  "author": { "name": "Tal Bsore" },
+  "keywords": ["hebrew", "rtl", "business", "workshop", "agents"],
+  "license": "SEE LICENSE IN LICENSE"
+}

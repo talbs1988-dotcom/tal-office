@@ -3,14 +3,14 @@
   "owner": { "name": "Tal Bsore" },
   "metadata": {
     "description": "המשרד: הקיט של סדנת Claude Code Business של טל בשור. מקים לבעל העסק משרד מסודר עם Claude Code, שלב אחרי שלב, בעברית",
-    "version": "0.1.1"
+    "version": "0.1.2"
   },
   "plugins": [
     {
       "name": "tal-office",
       "source": "./plugins/tal-office",
       "description": "חמישה שלבים, פקודה לכל שלב: הקמת המשרד · להכיר את העסק · מפת העסק · סקיל ראשון · סוכן ראשון",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "category": "productivity",
       "tags": ["hebrew", "rtl", "business", "workshop", "agents"]
     }
